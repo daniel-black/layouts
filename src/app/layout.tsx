@@ -1,6 +1,9 @@
 import './globals.css';
+import { Comfortaa } from 'next/font/google';
 import Navbar from './components/navbar';
 import ScreenContainer from './components/screen-container';
+
+const comforta = Comfortaa({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Layouts',
@@ -13,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className='text-white bg-red-500'>
+    <html lang="en" className={comforta.className}>
+      <body className='bg-stone-800 text-stone-200'>
         <ScreenContainer>
           <Navbar />
           {children}
