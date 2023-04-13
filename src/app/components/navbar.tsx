@@ -29,10 +29,10 @@ export default function Navbar() {
         </button>
         {/* Toggle for showing and hiding Nav when screen is small  */}
         <button
-          className="p-1 rounded border sm:hidden"
+          className="p-2 rounded border sm:hidden border-stone-700 bg-stone-800 text-stone-300 px-3"
           onClick={() => setShowFullNav(!showFullNav)}
         >
-          {showFullNav ? '=' : 'X'}
+          {showFullNav ? 'X' : 'Menu'}
         </button>
       </div>
 
